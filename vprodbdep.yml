@@ -1,4 +1,4 @@
-apiVersion: apps/V1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vprodb
@@ -37,6 +37,21 @@ spec:
       volumes:
         - name:  vpro-db-data
           awsElasticBlockStore:
-             volumeID: vol-0da31f00121e70088
+             volumeID: vol-01e9eb6ce8a70e881
              fsType: ext4
         
+
+
+#         {
+#     "AvailabilityZone": "us-east-2a",
+#     "CreateTime": "2021-11-15T12:58:46.000Z",
+#     "Encrypted": false,
+#     "Size": 3,
+#     "SnapshotId": "",
+#     "State": "creating",
+#     "VolumeId": "vol-01e9eb6ce8a70e881",
+#     "Iops": 100,
+#     "Tags": [],
+#     "VolumeType": "gp2",
+#     "MultiAttachEnabled": false
+# }
